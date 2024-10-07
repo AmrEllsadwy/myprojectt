@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+
+<div role="main" class="main-container container js-quickedit-main-content">
+    <div class="container">
+        <div class="row">
+
+                            
+                            
+
+                            
+                                            <section class="col-sm-12">
+
+                                                                                        <div class="highlighted">  <div class="region region-highlighted">
+<div data-drupal-messages-fallback="" class="hidden"></div>
+
+</div>
+</div>
+                                        
+                                    
+                                                            <a id="main-content"></a>
+                      <div class="region region-content">
+    <h1 class="page-header">خدمة الفحص الفني الدوري</h1>
+<br>
+    <form method="POST">
+        <h2>حذف موعد </h2>
+
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br>
+        <button type="submit" class="btn btn-primary">إرسال</button>
+    </form>
+    <br>
+
+</div>
+
+                                </section>
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div>
+
+  
+
+{% endblock content %}
